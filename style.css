@@ -1,0 +1,60 @@
+body {
+    padding: 50px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.svg {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+}
+
+.text {
+    fill: red;
+    font-size: 10px;
+}
+
+.svg-hidden {
+    overflow: visible;
+}
+
+.rect {
+    stroke: brown;
+    stroke-width: 10;
+    stroke-dasharray: 0 700;
+    transition: stroke-dasharray 1s;
+
+}
+
+.svg-rect:hover {
+    stroke-dasharray: 700 0;
+}
+
+
+.circle {
+    stroke-dasharray: 0 314;
+    transition: stroke-dasharray 1s;
+}
+
+.svg-circle:hover .circle {
+    stroke-dasharray: calc(2 * 3.14159265358979 * 50);
+}
+
+.apple-path {
+    fill: none;
+    stroke: red;
+    transition: all 2s ease-in-out;
+    stroke-dasharray: 0 1800;
+    stroke-opacity: 0;
+
+}
+.apple-path:hover{
+    stroke-dasharray: 1800;
+    stroke-opacity: 1;
+}
